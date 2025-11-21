@@ -1,0 +1,372 @@
+[
+  {
+    "id": "C09KST22U1M",
+    "name": "@mpdm-ishaan--nicholas--rafael--jmboullosa-1",
+    "topic": "",
+    "purpose": "Group DM with Juan Manuel Boullosa Novo, Raf, nicholas, Ishaan",
+    "memberCount": 4,
+    "mpim": true,
+    "im": false,
+    "private": true
+  },
+  {
+    "id": "C09RU5D051N",
+    "name": "@mpdm-nicholas--rafael--jmboullosa-1",
+    "topic": "",
+    "purpose": "Group DM with Juan Manuel Boullosa Novo, Raf, nicholas",
+    "memberCount": 3,
+    "mpim": true,
+    "im": false,
+    "private": true
+  },
+  {
+    "id": "D09FHV8HK2A",
+    "name": "@ahenry",
+    "topic": "",
+    "purpose": "DM with Aoife",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09H08M1MC0",
+    "name": "@google_calendar",
+    "topic": "",
+    "purpose": "DM with Google Calendar",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09GBDTPY4Q",
+    "name": "@notion",
+    "topic": "",
+    "purpose": "DM with Notion",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FHV8D406",
+    "name": "@nicholas",
+    "topic": "",
+    "purpose": "DM with nicholas",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FHV8BNQ6",
+    "name": "@jmboullosa",
+    "topic": "",
+    "purpose": "DM with Juan Manuel Boullosa Novo",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09GJ5W2L80",
+    "name": "@ishaan",
+    "topic": "",
+    "purpose": "DM with Ishaan",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FHVA784W",
+    "name": "@rafael",
+    "topic": "",
+    "purpose": "DM with Raf",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FHV8AFRC",
+    "name": "@slackbot",
+    "topic": "",
+    "purpose": "DM with Slackbot",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FFRY4YGM",
+    "name": "@googledrive",
+    "topic": "",
+    "purpose": "DM with Google Drive",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09H954P0R1",
+    "name": "@github",
+    "topic": "",
+    "purpose": "DM with GitHub",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09G4SK2LE9",
+    "name": "@outlook_calendar",
+    "topic": "",
+    "purpose": "DM with Outlook Calendar",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09F3HMDV8F",
+    "name": "@wf_bot_a09f3hkn6et",
+    "topic": "",
+    "purpose": "DM with ",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "C09FNLVRUTE",
+    "name": "#all-zentus",
+    "topic": "",
+    "purpose": "Share announcements and updates about company news, upcoming events, or teammates who deserve some kudos. ⭐",
+    "memberCount": 5,
+    "mpim": false,
+    "im": false,
+    "private": false
+  },
+  {
+    "id": "C09TPPFFMB7",
+    "name": "#proposals",
+    "topic": "",
+    "purpose": "",
+    "memberCount": 5,
+    "mpim": false,
+    "im": false,
+    "private": false
+  },
+  {
+    "id": "D09H08M1MC0",
+    "name": "@google_calendar",
+    "topic": "",
+    "purpose": "DM with Google Calendar",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09GBDTPY4Q",
+    "name": "@notion",
+    "topic": "",
+    "purpose": "DM with Notion",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FHV8D406",
+    "name": "@nicholas",
+    "topic": "",
+    "purpose": "DM with nicholas",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FHV8BNQ6",
+    "name": "@jmboullosa",
+    "topic": "",
+    "purpose": "DM with Juan Manuel Boullosa Novo",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09GJ5W2L80",
+    "name": "@ishaan",
+    "topic": "",
+    "purpose": "DM with Ishaan",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FHVA784W",
+    "name": "@rafael",
+    "topic": "",
+    "purpose": "DM with Raf",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FHV8AFRC",
+    "name": "@slackbot",
+    "topic": "",
+    "purpose": "DM with Slackbot",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09FFRY4YGM",
+    "name": "@googledrive",
+    "topic": "",
+    "purpose": "DM with Google Drive",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "C09FFT0JNHK",
+    "name": "#admin",
+    "topic": "",
+    "purpose": "",
+    "memberCount": 5,
+    "mpim": false,
+    "im": false,
+    "private": false
+  },
+  {
+    "id": "C09FNLVT560",
+    "name": "#social",
+    "topic": "",
+    "purpose": "Other channels are for work. This one’s just for fun. Get to know your teammates and show your lighter side. 🎈",
+    "memberCount": 5,
+    "mpim": false,
+    "im": false,
+    "private": false
+  },
+  {
+    "id": "C09N58620UR",
+    "name": "#daily-checkin",
+    "topic": "",
+    "purpose": "Almost-daily checkin to point the current status of the work is being done.",
+    "memberCount": 5,
+    "mpim": false,
+    "im": false,
+    "private": false
+  },
+  {
+    "id": "C09NDGRPVB7",
+    "name": "#thursday-meeting",
+    "topic": "",
+    "purpose": "",
+    "memberCount": 5,
+    "mpim": false,
+    "im": false,
+    "private": false
+  },
+  {
+    "id": "D09H954P0R1",
+    "name": "@github",
+    "topic": "",
+    "purpose": "DM with GitHub",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09G4SK2LE9",
+    "name": "@outlook_calendar",
+    "topic": "",
+    "purpose": "DM with Outlook Calendar",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "D09F3HMDV8F",
+    "name": "@wf_bot_a09f3hkn6et",
+    "topic": "",
+    "purpose": "DM with ",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "C09FFK60XN1",
+    "name": "#zentus_engineering_collab",
+    "topic": "Engineering team collaboration hub.",
+    "purpose": "Centralized channel for the Zentus Engineering team to collaborate, share resources, and discuss challenges and progress. Aimed at improving team productivity and project management.",
+    "memberCount": 5,
+    "mpim": false,
+    "im": false,
+    "private": false
+  },
+  {
+    "id": "C09SP4GSBRU",
+    "name": "#github-status",
+    "topic": "",
+    "purpose": "",
+    "memberCount": 5,
+    "mpim": false,
+    "im": false,
+    "private": false
+  },
+  {
+    "id": "D09FHV8HK2A",
+    "name": "@ahenry",
+    "topic": "",
+    "purpose": "DM with Aoife",
+    "memberCount": 2,
+    "mpim": false,
+    "im": true,
+    "private": false
+  },
+  {
+    "id": "C09KST22U1M",
+    "name": "@mpdm-ishaan--nicholas--rafael--jmboullosa-1",
+    "topic": "",
+    "purpose": "Group DM with Juan Manuel Boullosa Novo, Raf, nicholas, Ishaan",
+    "memberCount": 4,
+    "mpim": true,
+    "im": false,
+    "private": true
+  },
+  {
+    "id": "C09FE4Z1K99",
+    "name": "#test",
+    "topic": "",
+    "purpose": "",
+    "memberCount": 1,
+    "mpim": false,
+    "im": false,
+    "private": true
+  },
+  {
+    "id": "C09RU5D051N",
+    "name": "@mpdm-nicholas--rafael--jmboullosa-1",
+    "topic": "",
+    "purpose": "Group DM with Juan Manuel Boullosa Novo, Raf, nicholas",
+    "memberCount": 3,
+    "mpim": true,
+    "im": false,
+    "private": true
+  }
+]
