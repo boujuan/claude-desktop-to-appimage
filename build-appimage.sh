@@ -16,8 +16,9 @@ ELECTRON_BUNDLED=0
 # Set to 1 if you want to keep the installer outside the build directory to avoid re-downloading
 KEEP_INSTALLER=0
 
-# Update this URL when a new version of Claude Desktop is released
-CLAUDE_DOWNLOAD_URL="https://storage.googleapis.com/osprey-downloads-c02f6a0d-347c-492b-a752-3e0651722e97/nest-win-x64/Claude-Setup-x64.exe"
+# Official Claude Desktop download URL (automatically redirects to latest version)
+# This URL always points to the most recent Windows installer
+CLAUDE_DOWNLOAD_URL="https://claude.ai/api/desktop/win32/x64/exe/latest/redirect"
 
 # Directory where the build will be done
 WORK_DIR="/tmp/claude-build"
@@ -113,11 +114,14 @@ echo "Checking dependencies..."
 DEPS_TO_INSTALL=""
 
 # Check system package dependencies
-for cmd in 7z wget wrestool icotool convert npx; do
+for cmd in 7z curl wget wrestool icotool convert npx file; do
     if ! check_command "$cmd"; then
         case "$cmd" in
             "7z")
                 DEPS_TO_INSTALL="$DEPS_TO_INSTALL 7zip"
+                ;;
+            "curl")
+                DEPS_TO_INSTALL="$DEPS_TO_INSTALL curl"
                 ;;
             "wget")
                 DEPS_TO_INSTALL="$DEPS_TO_INSTALL wget"
@@ -130,6 +134,9 @@ for cmd in 7z wget wrestool icotool convert npx; do
                 ;;
             "npx")
                 DEPS_TO_INSTALL="$DEPS_TO_INSTALL nodejs npm"
+                ;;
+            "file")
+                DEPS_TO_INSTALL="$DEPS_TO_INSTALL file"
                 ;;
         esac
     fi
@@ -245,8 +252,30 @@ fi
 if [ ! -e "$CLAUDE_EXE" ]; then
     echo "❌ Claude Desktop installer not found. Downloading..."
     echo "📥 Downloading Claude Desktop installer..."
-    if ! wget -O "$CLAUDE_EXE" "$CLAUDE_DOWNLOAD_URL"; then
+    # Use browser headers to bypass Cloudflare protection
+    if ! curl -L -o "$CLAUDE_EXE" \
+        -H "User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+        -H "Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8" \
+        -H "Accept-Language: en-US,en;q=0.5" \
+        -H "Sec-Fetch-Dest: document" \
+        -H "Sec-Fetch-Mode: navigate" \
+        -H "Sec-Fetch-Site: none" \
+        "$CLAUDE_DOWNLOAD_URL"; then
         echo "❌ Failed to download Claude Desktop installer"
+        echo "   If you see Cloudflare errors, the redirect URL may be temporarily blocked."
+        echo "   You can manually download from https://claude.ai/download and use --claude-download-url."
+        exit 1
+    fi
+
+    # Verify we downloaded an actual executable, not an error page
+    if ! file "$CLAUDE_EXE" | grep -q "PE32\|executable"; then
+        echo "❌ Downloaded file is not a valid Windows executable"
+        echo "   File type: $(file "$CLAUDE_EXE")"
+        echo "   This usually means Cloudflare blocked the download."
+        echo ""
+        echo "   Workaround: Manually download the installer from https://claude.ai/download"
+        echo "   Then use: $0 --claude-download-url /path/to/Claude-Setup-x64.exe"
+        rm -f "$CLAUDE_EXE"
         exit 1
     fi
     echo "✓ Download complete"
@@ -334,6 +363,7 @@ npx asar extract app.asar app.asar.contents
 
 # Replace native module with stub implementation
 echo "Creating stub native module..."
+mkdir -p app.asar.contents/node_modules/claude-native
 cat > app.asar.contents/node_modules/claude-native/index.js << EOF
 // Stub implementation of claude-native using KeyboardKey enum values
 const KeyboardKey = {
